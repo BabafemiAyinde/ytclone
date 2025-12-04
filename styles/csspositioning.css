@@ -1,0 +1,54 @@
+body {
+    /* margin: 0; */
+    padding-top: 60px;
+    padding-left: 100px;
+    /* box-sizing: border-box; */
+    font-family: Arial, sans-serif;
+    height: 3000px; /* to enable scrolling for testing fixed positioning */ 
+
+}
+.header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* to appear above other content */
+    display: flex;
+    align-items: center;
+}
+
+.absolute-demo {
+    background-color: orange;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 175px;
+    padding: 5px;
+    z-index: 1; /* to appear below the header */
+}
+
+.sidebar {
+    background-color: gray;
+    color: white;
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 50px; /* below the header */
+    left: 0;
+}
+
+.div-1 {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    /* position: static; */
+}
+
+.div-2 {
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+}
